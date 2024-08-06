@@ -3,7 +3,7 @@ import IoCProvider from './providers/IoCProvider';
 import IoCContainer from './modules/IoCContainer';
 import useDependency from './hooks/useDependency';
 
-const TOKEN = 'ExampleService';
+const TOKEN = 'Hola mundo!';
 
 const ExampleService = () => {
   return {
@@ -17,7 +17,7 @@ container.register(TOKEN, ExampleService());
 const ExampleComponent = () => {
   const exampleService = useDependency(TOKEN);
   return (
-    <div>
+    <div className='service'>
       {exampleService ? exampleService.getMessage() : 'Service not available'}
     </div>
   );
