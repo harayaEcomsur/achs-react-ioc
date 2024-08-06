@@ -2,12 +2,13 @@ import React from 'react';
 import IoCProvider from './providers/IoCProvider';
 import IoCContainer from './modules/IoCContainer';
 import useDependency from './hooks/useDependency';
+import './App.css';
 
-const TOKEN = 'Hola mundo!';
+const TOKEN = 'ExampleService';
 
 const ExampleService = () => {
   return {
-    getMessage: () => 'Hello from ExampleService!',
+    getMessage: () => 'Hola mundo!',
   };
 };
 
